@@ -51,7 +51,3 @@ async def clear_all_test_solutions(message: types.Message):
 @router.message(F.text == "Ortga", IsAdmin())
 async def back_to_main(message: types.Message):
     await message.answer("Bosh menyu:", reply_markup=main_menu)
-
-@router.message(IsAdmin())
-async def f(message: types.Message):
-    pass

@@ -291,3 +291,7 @@ async def category_selected(message: types.Message):
         f"Kategoriya: {category.name}\nAmalni tanlang:",
         reply_markup=category_actions_markup(category.id)
     )
+
+@router.message(IsAdmin())
+async def f(message: types.Message):
+    pass
